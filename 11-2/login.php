@@ -1,22 +1,24 @@
 <?php
 session_start();
 
+// Check if form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['userping'];
+    $username = $_POST["username"];
+    $pwd = $_POST["userping"];
 
-    if ($username === 'admin' && $password === 'admin888') {
-        $_SESSION['username'] = $username;
+    // Simple credential check (in real applications, use a database)
+    if ($username == 'admin' && $pwd == '123') {
+        $_SESSION["username"] = $username;
 
-        if (isset($_POST['remember']) && $_POST['remember'] == '1') {
-            setcookie('username', $username, time() + (86400 * 7), "/"); // 7天
-            setcookie('password', $password, time() + (86400 * 7), "/");
+        if (isset($_POST["autoLogin"])) {
+            setcookie("username", $username, time() + 3600 * 24 * 7);
         }
 
-        header('Location: index.php');
-        exit();
+        header("Location: index.php");
+        exit;
     } else {
-        echo "用户名或密码错误。";
+        echo "<script>alert('用户名或密码错误，请重试！'); history.back();</script>";
+        exit;
     }
 }
 ?>
