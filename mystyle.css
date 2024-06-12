@@ -1,0 +1,173 @@
+/* CSS Document */
+body,td,th {
+    font-size: 12px;
+    text-align: center;
+}
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #eee;
+}
+.a:link {
+    color: #CCFF33;
+    text-decoration: none;
+}
+.a:visited {
+    color: #FFCC00;
+    text-decoration: none;
+}
+.a:hover {
+    color: #00FF99;
+    text-decoration: none;
+}
+.a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.c_td {
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: #4279C6;
+}
+.top {
+    background-color: #ADD7F7;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #4279C6;
+    border-left-color: #4279C6;
+}
+.m_td {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #4279C6;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #4279C6;
+    border-left-color: #4279C6;
+    margin-left:5px;
+
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+#content {
+    font-size: 12px;
+    color: #999999;
+}
+#h_color {
+    border: 1px solid #4279C6;
+}
+  table.login{
+        width: 300px;
+        border:1px solid #ccc;
+        border-collapse: collapse;
+        margin: 50px auto;
+    }
+ .login td
+{    
+    height:30px;
+    line-height:30px;
+}
+.text
+{
+        width:180px;
+        border:1px solid #CCC;
+        height:20px;
+        padding-left:4px;
+}
+.login .title
+{
+    font-size:20px; 
+    font-weight:bold; 
+    color:#FFF;
+    height:30px; 
+    line-height:30px;
+}
+.login .button{
+     background-color:#4279C6;
+     border:1px solid #4279C6;
+     color:#fff;
+     width:80px;
+     height:25px;
+     margin:0 5px;
+     cursor:pointer;
+ }
+ .reg{
+     width:400px;
+     margin:15px;
+     padding:0px;
+     border:1px solid #ccc;
+     border-collapse: collapse;
+     background-color:#fff;
+     margin: 50px auto;
+ }
+.reg .title{
+    text-align:center;
+    padding:10px; 
+    font-size:20px; 
+    font-weight:bold;
+    color:#FFF; 
+    background-color: #4279C6;
+    height: 30px;
+    line-height: 30px;}
+.reg td{
+    height:30px;
+    line-height: 30px;
+}
+.reg th{
+    font-weight:normal;
+    text-align:right;
+}
+.reg input{
+    width:180px;
+    border:1px solid #ccc;
+    height:20px;
+    padding-left:4px;
+}
+.reg .button{
+    background-color:#4279C6;
+    border:1px solid #4279C6;
+    color:#fff;
+    width:80px;
+    height:25px;
+    margin:0 5px;
+    cursor:pointer;
+}
+.reg .td-btn{
+    text-align:center;
+    padding-top:10px;
+}
+
+  table.list{
+                border:1px solid #ccc;
+                border-collapse: collapse;
+                width:799px;
+                margin:0px auto;  
+            }
+            table.list th{
+                border:1px solid #ccc;
+                background-color: #4279C6;
+                height: 30px;
+                line-height: 30px;
+                color:#FFF;
+            }
+            table.list td{
+                border:1px solid #ccc;
+                height: 25px;
+                line-height: 25px;
+            }
