@@ -8,7 +8,8 @@
     </head>
     <body>
         <center> 
-	<!-- 此处需要包含top.php文件 -->   
+	<!-- 此处需要包含top.php文件 -->
+        <?php include("top.php");   
      
             <table width="799" border="0" cellpadding="0" cellspacing="0">
                 <tr>
@@ -69,7 +70,8 @@
                     </td>
                 </tr>
             </table>
-	<!-- 此处需要包含bottom.html文件 -->  
+	<!-- 此处需要包含bottom.html文件 -->
+        <?php include("bottom.html");  
 
            </center>
     </body>
