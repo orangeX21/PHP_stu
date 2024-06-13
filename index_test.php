@@ -17,10 +17,8 @@ echo "欢迎，" . $_SESSION['username'] . "！这是您的主页。";
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-<?php include 'top.php';?>
 <h1>欢迎来到主页</h1>
 <p>这里是您登录后看到的内容。</p>
 <a href="logout.php">注销</a>
-<?php include 'bottom.html'; ?>
 </body>
 </html>

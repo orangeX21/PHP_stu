@@ -1,24 +1,43 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>欢迎注册</title>
 <link href="mystyle.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+    function checkForm() {
+        var username = document.forms["register_form"]["username"].value;
+        var email = document.forms["register_form"]["email"].value;
+        var password = document.forms["register_form"]["password"].value;
+        var confirmPassword = document.forms["register_form"]["confirm_password"].value;
+
+        if (username == "" || password == "" || email == "") {
+            alert("用户名、邮箱和密码不能为空");
+            return false;
+        }
+
+        if (password != confirmPassword) {
+            alert("两次输入的密码不一致");
+            return false;
+        }
+
+        return true;
+    }
+</script>
 </head>
 <body>
-<form method="post" action="register.php" onsubmit="return checkForm()" >
-<table class="reg">
-	<tr><td class="title" colspan="2">欢迎注册新用户</td></tr>
-	<tr><th>用户名：</th><td><input type="text" name="username" /></td></tr>
-	<tr><th>邮箱：</th><td><input type="text" name="email" /></td></tr>
-	<tr><th>密码：</th><td><input type="password" name="password" id="pw1" /></td></tr>
-	<tr><th>确认密码：</th><td><input type="password" id="pw2" /></td></tr>
-	<tr><td colspan="2" class="td-btn">
-	<input type="submit" value="提交注册" class="button" />
-	<input type="reset" value="重新填写" class="button" />
-	</td></tr>
-</table>
+<form name="register_form" method="post" action="register.php" onsubmit="return checkForm()">
+    <table class="reg">
+        <tr><td class="title" colspan="2">欢迎注册新用户</td></tr>
+        <tr><th>用户名：</th><td><input type="text" name="username" /></td></tr>
+        <tr><th>邮箱：</th><td><input type="text" name="email" /></td></tr>
+        <tr><th>密码：</th><td><input type="password" name="password" id="pw1" /></td></tr>
+        <tr><th>确认密码：</th><td><input type="password" name="confirm_password" id="pw2" /></td></tr>
+        <tr><td colspan="2" class="td-btn">
+        <input type="submit" value="提交注册" class="button" />
+        <input type="reset" value="重新填写" class="button" />
+        </td></tr>
+    </table>
 </form>
 </body>
 </html>
